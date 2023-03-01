@@ -4,7 +4,8 @@ fun main() {
     person.eat(5)
     person.weight
     println(person.weight)
-    person.birthday(1)
+    person.birthday()
+
 
 
 
@@ -21,9 +22,9 @@ class Human(var name: String, var age: Int ,var  weight: Int){
         println("I am eating $foodWeight Kg of food")
         weight+= foodWeight
     }
-    fun birthday(personAge: Int){
-        age+=personAge
-
+    fun birthday(){
+        age++
+        println(age)
     }
 }
 data class User(var firstName: String,var lastName: String,var email: String,var phoneNumber: Int , var password: Int)
